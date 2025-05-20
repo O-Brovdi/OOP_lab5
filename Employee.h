@@ -80,4 +80,11 @@ public:
     ~MultiRole();
 };
 
+class AutomationTester : public Tester, public Developer {
+public:
+    AutomationTester(string name, string lang);
+    void Work() override;
+    ~AutomationTester();
+};
+
 #endif

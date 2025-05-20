@@ -10,6 +10,10 @@ int main() {
     cout << "\n--- MultiRole ---\n";
     MultiRole mr("Olena", "Python");
 
+    cout << "\n--- AutomationTester ---\n";
+    AutomationTester at("Stepan", "JavaScript");
+    at.Work();
+
     cout << "\n--- END OF MAIN ---\n";
     return 0;
 }

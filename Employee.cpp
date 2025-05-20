@@ -93,3 +93,14 @@ MultiRole::MultiRole(string name, string lang)
 MultiRole::~MultiRole() {
     cout << "~MultiRole()\n";
 }
+
+AutomationTester::AutomationTester(string name, string lang)
+    : Person(name), Developer(name, lang) {
+    cout << "AutomationTester()\n";
+}
+void AutomationTester::Work() {
+    cout << name << " тестує код автоматизовано мовою " << language << ".\n";
+}
+AutomationTester::~AutomationTester() {
+    cout << "~AutomationTester()\n";
+}
